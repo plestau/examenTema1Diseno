@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/recientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        android:text="Recent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/titulo"/>
+
+    <TextView
+        android:id="@+id/grupos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project's groups"
+        app:layout_constraintStart_toEndOf="@+id/recientes"
+        app:layout_constraintTop_toTopOf="@+id/recientes"
+        app:layout_constraintBottom_toBottomOf="@id/recientes"
+        android:layout_marginStart="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/contenedorScrollHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/recientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/recientes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barry"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imagen1"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barry"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imagen2"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barry"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imagen3"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barry"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imagen4"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barry"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imagen5"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barry"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imagen6"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollVertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="@color/colorCamara"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorScrollHorizontal"
+        app:layout_constraintBottom_toTopOf="@+id/menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <!-- Imagen de perfil -->
+                <ImageView
+                    android:id="@+id/imagenChat1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Nombre -->
+                <TextView
+                    android:id="@+id/nombreChat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat1"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat1"
+                    app:layout_constraintBottom_toTopOf="@+id/ultimoMensaje1"
+                    android:gravity="center_vertical"/>
+
+                <!-- Último mensaje -->
+                <TextView
+                    android:id="@+id/ultimoMensaje1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat1"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagenChat2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nombreChat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat2"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat2"/>
+
+                <TextView
+                    android:id="@+id/ultimoMensaje2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat2"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat2"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagenChat3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nombreChat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat3"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat3"/>
+
+                <TextView
+                    android:id="@+id/ultimoMensaje3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat3"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat3"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagenChat4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nombreChat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat4"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat4"/>
+
+                <TextView
+                    android:id="@+id/ultimoMensaje4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat4"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagenChat5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nombreChat5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat5"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat5"/>
+
+                <TextView
+                    android:id="@+id/ultimoMensaje5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat5"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat5"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagenChat6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nombreChat6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat6"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat6"/>
+
+                <TextView
+                    android:id="@+id/ultimoMensaje6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat6"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat6"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imagenChat7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/perfil"
+                    android:background="@drawable/circle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nombreChat7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barry"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat7"
+                    app:layout_constraintTop_toTopOf="@+id/imagenChat7"/>
+
+                <TextView
+                    android:id="@+id/ultimoMensaje7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hola, ¿cómo estás?"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/imagenChat7"
+                    app:layout_constraintTop_toBottomOf="@+id/nombreChat7"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorAbajo"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_home_24"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/explorar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_explore_24"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/home"/>
+
+        <ImageView
+            android:id="@+id/camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_videocam_24"
+            android:layout_margin="15dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/colorCamara"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/explorar"/>
+
+        <ImageView
+            android:id="@+id/mensajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_message_24"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/camara"/>
+
+        <ImageView
+            android:id="@+id/emojis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_emoji_emotions_24"
+            android:layout_margin="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mensajes"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
